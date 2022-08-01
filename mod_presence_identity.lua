@@ -11,7 +11,7 @@ function on_message(event)
           update_presence_identity(
               event.stanza,
               event.origin.jitsi_meet_context_user,
-              event.origin.jitsi_meet_context_group
+              event.origin.jitsi_meet_context_user["email"]
           );
 
       end
