@@ -1,7 +1,7 @@
 local stanza = require "util.stanza";
 local update_presence_identity = module:require "util".update_presence_identity;
 
--- For all received presence messages, if the jitsi_meet_context_(user|group)
+-- For all received presence messages, if the jitsi_meet_context_(user|email)
 -- values are set in the session, then insert them into the presence messages
 -- for that session.
 function on_message(event)
